@@ -11,10 +11,10 @@ Current Widgets
 
 More Fancy Widget Will be added soon.
 
+Fancy Card -: Create fancy Card
 
-Fancy Card -: Create fancy Card 
-
-`FancyCard(
+```dart
+FancyCard(
                 width: Fancy.width(context),
                 height: Fancy.height(context) * 0.40,
                 redius: 10,
@@ -26,4 +26,5 @@ Fancy Card -: Create fancy Card
                     ),
                   ),
                 ),
-              ),`
+              ),
+```
