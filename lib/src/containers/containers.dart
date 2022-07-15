@@ -1,0 +1,94 @@
+import 'package:flutter/material.dart';
+
+typedef FancyContainersCallback = Function();
+
+class FancyContainer extends StatefulWidget {
+  const FancyContainer({
+    Key? key,
+    this.height = 120.0,
+    this.width,
+    this.color1,
+    this.color2,
+    this.title = "Title",
+    this.textColor = Colors.white,
+    this.subtitle = "Subtitle",
+    this.subtitleColor = Colors.white,
+    required this.onTap,
+    this.padding,
+    this.titleStyle,
+    this.subtitleStyle,
+  }) : super(key: key);
+
+  final double? width;
+  final double height;
+  final Color? color1;
+  final Color? color2;
+  final String title;
+  final Color? textColor;
+  final String subtitle;
+  final Color? subtitleColor;
+  final FancyContainersCallback? onTap;
+  final EdgeInsetsGeometry? padding;
+  final TextStyle? titleStyle;
+  final TextStyle? subtitleStyle;
+
+  @override
+  FancyContainerState createState() => FancyContainerState();
+}
+
+class FancyContainerState extends State<FancyContainer> {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: widget.onTap!() ?? () {},
+      child: Container(
+        width: widget.width ?? MediaQuery.of(context).size.width * 0.90,
+        height: widget.height,
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+          gradient: LinearGradient(colors: [
+            widget.color1 ?? const Color(0xff051937),
+            widget.color2 ?? const Color(0xffA8EB12)
+          ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.grey,
+              blurRadius: 12,
+              offset: Offset(0, 6),
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Text(
+                widget.title,
+                style: widget.titleStyle ??
+                    TextStyle(
+                      color: widget.textColor,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Text(
+                widget.subtitle,
+                style: widget.subtitleStyle ??
+                    TextStyle(
+                      color: widget.subtitleColor,
+                      fontSize: 15.0,
+                      // fontFamily: 'Montserrat',
+                    ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
