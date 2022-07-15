@@ -49,3 +49,15 @@ const NeumorphismContainer(),
 ```
 
 [![https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG](https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG "https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG")](httphttps://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG:// "https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG")
+
+
+
+Wanna Navigate To new Page? Use Below Snipet for Navigating.
+
+```dart
+Go.to(context, const NewPage());
+Go.toNamed(context, "/page", argument: {"name": id});
+Go.off(context, const NewPage());
+Go.offAll(context, const NewPage());
+Go.back(context);
+```

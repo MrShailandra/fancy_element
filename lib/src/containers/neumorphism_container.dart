@@ -4,10 +4,16 @@ class NeumorphismContainer extends StatelessWidget {
   final double? height;
   final double? width;
   final double? radius;
+  final bool? isCircle;
   final Widget? child;
 
   const NeumorphismContainer(
-      {Key? key, this.height, this.child, this.width, this.radius})
+      {Key? key,
+      this.isCircle,
+      this.height,
+      this.child,
+      this.width,
+      this.radius})
       : super(key: key);
 
   @override
@@ -16,8 +22,10 @@ class NeumorphismContainer extends StatelessWidget {
       height: height ?? 250,
       width: width ?? 250,
       decoration: BoxDecoration(
+          shape: isCircle == true ? BoxShape.circle : BoxShape.rectangle,
           color: Colors.grey[300],
-          borderRadius: BorderRadius.circular(radius ?? 15),
+          borderRadius:
+              isCircle == true ? null : BorderRadius.circular(radius ?? 15),
           boxShadow: [
             BoxShadow(
                 color: Colors.grey.shade500,

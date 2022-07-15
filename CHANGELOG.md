@@ -3,3 +3,8 @@
 * First Release with
   * Card
   * Neumorphism Container
+
+## 0.02
+
+* Added Easy Navigation
+* Update Read Me
