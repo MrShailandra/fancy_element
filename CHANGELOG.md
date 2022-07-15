@@ -4,7 +4,7 @@
   * Card
   * Neumorphism Container
 
-## 0.02
+## 0.0.2
 
 * Added Easy Navigation
 * Update Read Me
