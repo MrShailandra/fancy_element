@@ -14,7 +14,16 @@ More Fancy Widget Will be added soon.
 
 Fancy Card -: Create fancy Card 
 
-
-```
-FancyCard(                width: Fancy.width(context),                height: Fancy.height(context) * 0.40,                redius: 10,                child: Center(                  child: Container(                    child: constText(                      "This Is Fancy Card",                      style: TextStyle(fontSize: 20),                    ),                  ),                ),    ),
-```
+`FancyCard(
+                width: Fancy.width(context),
+                height: Fancy.height(context) * 0.40,
+                redius: 10,
+                child: Center(
+                  child: Container(
+                    child: const Text(
+                      "This Is Fancy Card",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                ),
+              ),`
