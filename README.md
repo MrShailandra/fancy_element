@@ -30,3 +30,22 @@ FancyCard(
 ```
 
 [![Fancy Card](https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657914504185.JPEG "Fancy Card")](https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657914504185.JPEG "Fancy Card")
+
+Fancy Container -: Create Gredient Container with Title and subtitle
+
+```dart
+ FancyContainer(
+                    color1: const Color(0xff0061ff),
+                    color2: const Color(0xff60efff),
+                    onTap: () {}),
+```
+
+[![Fancy Container](https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/gredient.JPEG "Fancy Container")](http://https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/gredient.JPEG "Fancy Container")
+
+Neumorphism Container -: This Widget is usefull for create Neumorphism Container.
+
+```dart
+const NeumorphismContainer(),
+```
+
+[![https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG](https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG "https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG")](httphttps://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG:// "https://raw.githubusercontent.com/MrShailandra/fancy_element/master/images/1657915139667.JPEG")
